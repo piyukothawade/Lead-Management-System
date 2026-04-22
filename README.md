@@ -1,16 +1,174 @@
-# React + Vite
+# 🏡 Lead Management System (Mini CRM)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Lead Management System built for a real estate use case.
+This application allows users to manage leads, track status, add notes, and visualize data through a dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 🔹 Lead Management
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Add new leads
+* Edit and delete leads
+* View all leads in a table
+* Search by name or phone
+* Filter by source and status
+* Sort by date or budget
 
-## Expanding the ESLint configuration
+### 🔹 Lead Details
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* View complete lead information
+* Update lead status (New, Contacted, Site Visit, Closed)
+* Add notes/comments
+
+### 🔹 Dashboard
+
+* Total leads count
+* Leads by source
+* Status distribution
+* Conversion rate
+* Lead trends (charts)
+
+
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* Recharts (Charts)
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB (Mongoose)
+
+---
+
+## 📁 Project Structure
+
+```
+lead-management-system/
+│
+├── frontend/
+│   └── src/
+│       └── app/
+│           └── features/
+│               └── leads/
+│                   ├── pages/
+│                   ├── components/
+│                   └── services/
+│
+├── backend/
+│   └── src/
+│       ├── controllers/
+│       ├── models/
+│       ├── routes/
+│       ├── middlewares/
+│       └── config/
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+
+```
+git clone <your-repo-url>
+cd lead-management-system
+```
+
+---
+
+### 2️⃣ Backend Setup
+
+```
+cd backend
+npm install
+```
+
+Create `.env` file:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+
+```
+
+Run backend:
+
+```
+npm run dev
+```
+
+---
+
+### 3️⃣ Frontend Setup
+
+```
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🔗 API Endpoints
+
+
+
+### 📌 Leads
+
+* GET `/api/leads`
+* GET `/api/leads/:id`
+* POST `/api/leads`
+* PUT `/api/leads/:id`
+* DELETE `/api/leads/:id`
+
+### 📝 Notes
+
+* POST `/api/leads/:id/notes`
+
+---
+
+
+
+## 📊 Dashboard Metrics
+
+* Total Leads
+* Closed Leads
+* Conversion Rate
+* Leads by Source
+* Status Distribution
+* Lead Trends
+
+---
+
+## ❗ Error Handling
+
+* Backend validation for required fields
+* Proper HTTP status codes
+* Frontend toast notifications for user feedback
+
+---
+
+
+---
+
+## 👨‍💻 Author
+
+**PiyuSha Kothawade**
+
+---
+
+## ⭐ Notes
+
+This project is designed for learning and interview preparation for full-stack roles.
+It demonstrates real-world concepts like CRUD operations, authentication, state management, and API integration.
+
+---
