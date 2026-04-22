@@ -157,12 +157,28 @@ npm run dev
 
 ---
 
+## 📌 Assumptions
+
+* Pagination is handled on frontend
+* Dashboard stats are calculated based on available data
+
+---
+
+## ✨ Additional Features Implemented
+
+* Loading skeletons for better UX
+* Confirmation modal for delete actions
+* Toast notifications
+* Client-side pagination
+* Form validation using Zod
+* Optimized dashboard using memoization
+
 
 ---
 
 ## 👨‍💻 Author
 
-**PiyuSha Kothawade**
+**Piyusha Kothawade**
 
 ---
 
