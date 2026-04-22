@@ -185,6 +185,6 @@ npm run dev
 ## ⭐ Notes
 
 This project is designed for learning and interview preparation for full-stack roles.
-It demonstrates real-world concepts like CRUD operations, authentication, state management, and API integration.
+It demonstrates real-world concepts like CRUD operations, state management, and API integration.
 
 ---
